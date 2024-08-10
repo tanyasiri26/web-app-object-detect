@@ -10,7 +10,7 @@ st.title("Blind Assistance object detection")
 
 st.write("Upload your Image...")
 
-model = torch.hub.load('ultralytics/yolov5', 'custom', path='models/best.pt', force_reload=True)
+model = torch.hub.load('ultralytics/yolov5', 'custom', path='models/detect', force_reload=True)
 
 uploaded_file = st.file_uploader("Choose .jpg pic ...", type="jpg")
 if uploaded_file is not None:
