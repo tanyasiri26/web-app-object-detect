@@ -6,11 +6,11 @@ from PIL import Image
 import numpy as np
 import torch, json , cv2 , detect
 
-st.title("🌊 Under the sea detection")
+st.title("Blind Assistance object detection")
 
 st.write("Upload your Image...")
 
-model = torch.hub.load('ultralytics/yolov5', 'custom', path='models/last.pt', force_reload=True)
+model = torch.hub.load('ultralytics/yolov5', 'custom', path='models/best.pt', force_reload=True)
 
 uploaded_file = st.file_uploader("Choose .jpg pic ...", type="jpg")
 if uploaded_file is not None:
